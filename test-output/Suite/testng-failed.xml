@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" name="Failed suite [Suite]" parallel="classes">
+  <test name="Test(failed)" parallel="classes" preserve-order="true">
+    <classes>
+      <class name="Exposure.RestAssured.addReminderTests">
+        <methods>
+          <include name="beforeTest"/>
+          <include name="afterTest"/>
+          <include name="printEX"/>
+          <include name="afterSuite"/>
+          <include name="beforeSuite"/>
+        </methods>
+      </class> <!-- Exposure.RestAssured.addReminderTests -->
+      <class name="Exposure.RestAssured.setConsentTest">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="setConsentTVTA_OPOUT_BEP1423002"/>
+          <include name="setConsentwithInvalidConsentValue_BEP1423006"/>
+          <include name="setConsentTVReco_OPTOUT_BEP1423004"/>
+          <include name="setConsentTVReco_OPTIN_BEP1423003"/>
+          <include name="setConsentwithInvalidConsentType_BEP1423005"/>
+          <include name="setConsentTVTA_OPTIN_BEP1423001"/>
+        </methods>
+      </class> <!-- Exposure.RestAssured.setConsentTest -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

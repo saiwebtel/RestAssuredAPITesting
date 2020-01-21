@@ -11,7 +11,7 @@
 		</class> 
 		<class name="Exposure.RestAssured.setConsentTest">	
 			<methods>
-					<include name="setConsentTVTA_OPTIN_BEP1423001()"/>
+					<!--include name="setConsentTVTA_OPTIN_BEP1423001()"--/>
 					<include name="setConsentTVTA_OPOUT_BEP1423002()" />
 					<include name="setConsentTVReco_OPTIN_BEP1423003()" />
 					<include name="setConsentTVReco_OPTOUT_BEP1423004()" />

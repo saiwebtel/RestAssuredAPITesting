@@ -3,7 +3,6 @@ package Exposure.RestAssured;
 import io.restassured.RestAssured;
 import io.restassured.response.Response;
 
-import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.sql.SQLException;
 import java.util.HashMap;
@@ -17,13 +16,6 @@ import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
-import testData.TestDataCreation;
-import xsdTojava.BTA;
-import xsdTojava.BTA.SetSTBPropertiesDoc;
-import xsdTojava.ObjectFactory;
-import xsdTojava.TSTBProperties;
-import xsdTojava.TSTBProperties.Property;
-import xsdTojava.TSTBPropertyNames;
 import RestAPIHelper.RestUtil;
 import XMLUtils.XMLUtil;
 import base.Testbase;
@@ -37,8 +29,8 @@ public class stbPropertiesTest extends Testbase {
 		RestAssured.basePath = "/broker/bta/setSTBProperties";
 
 	}
-	@Test(priority=1)
-	public void setConsentTVTA_OPTIN_BEP1423001() throws JAXBException, ClassNotFoundException, SQLException, ParserConfigurationException, TransformerException, IOException 
+	@Test(invocationCount=1,priority=1)
+	public void setSTBProperties_BEP1423001() throws JAXBException, ClassNotFoundException, SQLException, ParserConfigurationException, TransformerException, IOException 
 	{
 		System.out.println("CASE:1===================STB PROPERTIES TESTS==========================");
 		XMLUtil testData = new XMLUtil();
@@ -62,6 +54,7 @@ public class stbPropertiesTest extends Testbase {
 		Assert.assertEquals(response.getStatusCode(), 200);
 		Assert.assertEquals(equipmentID, equipmentIDDB);
 		System.out.println(response.asString());
+		DataBaseConnection.executeSelectQuery("delete from SETTOPBOXPROPERTIES where EQUIPMENTID ='"+ equipmentID +"'", tmdbUserName, tmdbPassword);
 		}
 		
 	}

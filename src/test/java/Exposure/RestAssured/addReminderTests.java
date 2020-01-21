@@ -1,42 +1,26 @@
 package Exposure.RestAssured;
 
-import org.testng.Assert;
-import org.testng.annotations.AfterMethod;
-import org.testng.annotations.AfterTest;
-import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.BeforeTest;
-import org.testng.annotations.Test;
-
-import static io.restassured.RestAssured.given;
-import static io.restassured.matcher.RestAssuredMatchers.matchesXsdInClasspath;
-import static org.hamcrest.Matchers.equalTo;
-import groovy.ui.SystemOutputInterceptor;
 import io.restassured.RestAssured;
-import io.restassured.http.ContentType;
-import io.restassured.matcher.RestAssuredMatchers;
 import io.restassured.response.Response;
 
 import java.io.FileNotFoundException;
 import java.sql.SQLException;
-import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
-
-import static org.hamcrest.Matchers.*;
 
 import javax.xml.bind.JAXBException;
 
+import org.testng.Assert;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 import testData.TestDataCreation;
-import dbConnection.DataBaseConnection;
 import RestAPIHelper.RestUtil;
 import SqlQueries.Queries;
-import XMLUtils.XMLUtil;
 import base.Testbase;
-import model.AddReminder;
-import model.BTA;
+import dbConnection.DataBaseConnection;
 
 public class addReminderTests extends Testbase {
 	static String requestBody1 = null;
@@ -190,7 +174,6 @@ public class addReminderTests extends Testbase {
 			
 			//Sending Request
 			Response response =  RestUtil.sendPostAPI(FinalPostBody, "application/xml", queryParams);
-			//Validating Response
 			//Validating Response
 			Assert.assertEquals(response.getStatusCode(), 200);
 			Assert.assertEquals(response.getBody().xmlPath().get("BTAResponse.ERROR.ErrorDescription"),"Reminder Type tag is either missing or empty");

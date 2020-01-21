@@ -1,45 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="8" passed="8">
+<testng-results skipped="0" failed="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="24156" started-at="2020-01-13T14:54:03Z" finished-at="2020-01-13T14:54:27Z">
+  <suite name="Default suite" duration-ms="8525" started-at="2020-01-16T16:37:10Z" finished-at="2020-01-16T16:37:19Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="24156" started-at="2020-01-13T14:54:03Z" finished-at="2020-01-13T14:54:27Z">
-      <class name="Exposure.RestAssured.setConsentTest">
-        <test-method status="PASS" signature="setConsentTVTA_OPTIN_BEP1423001()[pri:1, instance:Exposure.RestAssured.setConsentTest@62ee68d8]" name="setConsentTVTA_OPTIN_BEP1423001" duration-ms="1066" started-at="2020-01-13T14:54:05Z" finished-at="2020-01-13T14:54:06Z">
-        </test-method> <!-- setConsentTVTA_OPTIN_BEP1423001 -->
-        <test-method status="PASS" signature="setConsentTVTA_OPOUT_BEP1423002()[pri:2, instance:Exposure.RestAssured.setConsentTest@62ee68d8]" name="setConsentTVTA_OPOUT_BEP1423002" duration-ms="15142" started-at="2020-01-13T14:54:06Z" finished-at="2020-01-13T14:54:21Z">
-        </test-method> <!-- setConsentTVTA_OPOUT_BEP1423002 -->
-        <test-method status="PASS" signature="setConsentTVReco_OPTIN_BEP1423003()[pri:3, instance:Exposure.RestAssured.setConsentTest@62ee68d8]" name="setConsentTVReco_OPTIN_BEP1423003" duration-ms="1386" started-at="2020-01-13T14:54:21Z" finished-at="2020-01-13T14:54:23Z">
-        </test-method> <!-- setConsentTVReco_OPTIN_BEP1423003 -->
-        <test-method status="PASS" signature="setConsentTVReco_OPTOUT_BEP1423004()[pri:4, instance:Exposure.RestAssured.setConsentTest@62ee68d8]" name="setConsentTVReco_OPTOUT_BEP1423004" duration-ms="1370" started-at="2020-01-13T14:54:23Z" finished-at="2020-01-13T14:54:24Z">
-        </test-method> <!-- setConsentTVReco_OPTOUT_BEP1423004 -->
-        <test-method status="PASS" signature="setConsentwithInvalidConsentType_BEP1423005()[pri:5, instance:Exposure.RestAssured.setConsentTest@62ee68d8]" name="setConsentwithInvalidConsentType_BEP1423005" duration-ms="1678" started-at="2020-01-13T14:54:24Z" finished-at="2020-01-13T14:54:26Z">
-        </test-method> <!-- setConsentwithInvalidConsentType_BEP1423005 -->
-        <test-method status="PASS" signature="setConsentwithInvalidConsentValue_BEP1423006()[pri:5, instance:Exposure.RestAssured.setConsentTest@62ee68d8]" name="setConsentwithInvalidConsentValue_BEP1423006" duration-ms="1066" started-at="2020-01-13T14:54:26Z" finished-at="2020-01-13T14:54:27Z">
-        </test-method> <!-- setConsentwithInvalidConsentValue_BEP1423006 -->
-      </class> <!-- Exposure.RestAssured.setConsentTest -->
-      <class name="Exposure.RestAssured.addReminderTests">
-        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:Exposure.RestAssured.addReminderTests@9629756]" name="beforeSuite" is-config="true" duration-ms="265" started-at="2020-01-13T14:54:02Z" finished-at="2020-01-13T14:54:03Z">
+    <test name="Default test" duration-ms="8525" started-at="2020-01-16T16:37:10Z" finished-at="2020-01-16T16:37:19Z">
+      <class name="Exposure.RestAssured.stbPropertiesTest">
+        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:Exposure.RestAssured.stbPropertiesTest@51081592]" name="beforeSuite" is-config="true" duration-ms="430" started-at="2020-01-16T16:37:10Z" finished-at="2020-01-16T16:37:10Z">
         </test-method> <!-- beforeSuite -->
-        <test-method status="PASS" signature="printEX()[pri:0, instance:Exposure.RestAssured.addReminderTests@9629756]" name="printEX" is-config="true" duration-ms="0" started-at="2020-01-13T14:54:03Z" finished-at="2020-01-13T14:54:03Z">
-        </test-method> <!-- printEX -->
-        <test-method status="PASS" signature="beforeTest()[pri:0, instance:Exposure.RestAssured.addReminderTests@9629756]" name="beforeTest" is-config="true" duration-ms="590" started-at="2020-01-13T14:54:03Z" finished-at="2020-01-13T14:54:03Z">
-        </test-method> <!-- beforeTest -->
-        <test-method status="PASS" signature="addReminderInsertionWithInterfaceVersion520_BEP14470001()[pri:1, instance:Exposure.RestAssured.addReminderTests@9629756]" name="addReminderInsertionWithInterfaceVersion520_BEP14470001" duration-ms="1304" started-at="2020-01-13T14:54:03Z" finished-at="2020-01-13T14:54:05Z">
-        </test-method> <!-- addReminderInsertionWithInterfaceVersion520_BEP14470001 -->
-        <test-method status="PASS" signature="afterTest()[pri:0, instance:Exposure.RestAssured.addReminderTests@9629756]" name="afterTest" is-config="true" duration-ms="97" started-at="2020-01-13T14:54:05Z" finished-at="2020-01-13T14:54:05Z">
-        </test-method> <!-- afterTest -->
-        <test-method status="PASS" signature="beforeTest()[pri:0, instance:Exposure.RestAssured.addReminderTests@9629756]" name="beforeTest" is-config="true" duration-ms="141" started-at="2020-01-13T14:54:05Z" finished-at="2020-01-13T14:54:05Z">
-        </test-method> <!-- beforeTest -->
-        <test-method status="PASS" signature="addReminderInsertionWithInterfaceVersion420_BEP14470004()[pri:2, instance:Exposure.RestAssured.addReminderTests@9629756]" name="addReminderInsertionWithInterfaceVersion420_BEP14470004" duration-ms="207" started-at="2020-01-13T14:54:05Z" finished-at="2020-01-13T14:54:05Z">
-        </test-method> <!-- addReminderInsertionWithInterfaceVersion420_BEP14470004 -->
-        <test-method status="PASS" signature="afterTest()[pri:0, instance:Exposure.RestAssured.addReminderTests@9629756]" name="afterTest" is-config="true" duration-ms="93" started-at="2020-01-13T14:54:05Z" finished-at="2020-01-13T14:54:05Z">
-        </test-method> <!-- afterTest -->
-        <test-method status="PASS" signature="afterSuite()[pri:0, instance:Exposure.RestAssured.addReminderTests@9629756]" name="afterSuite" is-config="true" duration-ms="0" started-at="2020-01-13T14:54:27Z" finished-at="2020-01-13T14:54:27Z">
+        <test-method status="PASS" signature="setSTBProperties_BEP1423001()[pri:1, instance:Exposure.RestAssured.stbPropertiesTest@51081592]" name="setSTBProperties_BEP1423001" duration-ms="6747" started-at="2020-01-16T16:37:10Z" finished-at="2020-01-16T16:37:17Z">
+        </test-method> <!-- setSTBProperties_BEP1423001 -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:Exposure.RestAssured.stbPropertiesTest@51081592]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2020-01-16T16:37:10Z" finished-at="2020-01-16T16:37:10Z">
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="setSTBProperties_BEP1423001()[pri:1, instance:Exposure.RestAssured.stbPropertiesTest@51081592]" name="setSTBProperties_BEP1423001" duration-ms="1770" started-at="2020-01-16T16:37:17Z" finished-at="2020-01-16T16:37:19Z">
+        </test-method> <!-- setSTBProperties_BEP1423001 -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:Exposure.RestAssured.stbPropertiesTest@51081592]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2020-01-16T16:37:17Z" finished-at="2020-01-16T16:37:17Z">
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="afterSuite()[pri:0, instance:Exposure.RestAssured.stbPropertiesTest@51081592]" name="afterSuite" is-config="true" duration-ms="0" started-at="2020-01-16T16:37:19Z" finished-at="2020-01-16T16:37:19Z">
         </test-method> <!-- afterSuite -->
-      </class> <!-- Exposure.RestAssured.addReminderTests -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+      </class> <!-- Exposure.RestAssured.stbPropertiesTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

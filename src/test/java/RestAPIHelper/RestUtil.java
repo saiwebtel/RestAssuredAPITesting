@@ -1,10 +1,9 @@
 package RestAPIHelper;
 
 import static io.restassured.RestAssured.given;
+import io.restassured.response.Response;
 
 import java.util.Map;
-
-import io.restassured.response.Response;
 
 public class RestUtil {
 

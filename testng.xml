@@ -1,20 +1,24 @@
-<suite name="Suite" parallel="classes" thread-count="2">
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Suite" parallel="false">
   <test name="Test">
     <classes>
-      <class name="Exposure.RestAssured.addReminderTests"/>
+      <class name="Exposure.RestAssured.addReminderTests">
       	<methods>
 					<include name="addReminderInsertionWithInterfaceVersion520_BEP14470001()" />
 					<include name="addReminderInsertionWithInterfaceVersion420_BEP14470004()" />
 		</methods>
-		<class name="Exposure.RestAssured.setConsentTest"/>	
+		</class> 
+		<class name="Exposure.RestAssured.setConsentTest">	
 			<methods>
-					<include name="setConsentTVTA_OPTIN_BEP1423001()" />
+					<include name="setConsentTVTA_OPTIN_BEP1423001()"/>
 					<include name="setConsentTVTA_OPOUT_BEP1423002()" />
 					<include name="setConsentTVReco_OPTIN_BEP1423003()" />
 					<include name="setConsentTVReco_OPTOUT_BEP1423004()" />
 					<include name="setConsentwithInvalidConsentType_BEP1423005()" />
 					<include name="setConsentwithInvalidConsentValue_BEP1423006()" />									
 		</methods>
+		</class> 
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

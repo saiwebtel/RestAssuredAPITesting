@@ -3,16 +3,14 @@ package testData;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
-import java.util.HashMap;
 import java.util.Map;
-import java.util.Properties;
 
-import base.Testbase;
-import XMLUtils.XMLUtil;
-import dbConnection.DataBaseConnection;
 import model.AddReminder;
 import model.BTA;
 import model.Consent;
+import XMLUtils.XMLUtil;
+import base.Testbase;
+import dbConnection.DataBaseConnection;
 
 public class TestDataCreation {
 

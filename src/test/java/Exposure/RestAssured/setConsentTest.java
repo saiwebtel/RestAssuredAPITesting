@@ -10,14 +10,11 @@ import java.util.Map;
 
 import javax.xml.bind.JAXBException;
 
-import model.Consent;
-
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import testData.TestDataCreation;
 import RestAPIHelper.RestUtil;
-import SqlQueries.Queries;
 import base.Testbase;
 import dbConnection.DataBaseConnection;
 

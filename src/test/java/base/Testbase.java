@@ -5,23 +5,14 @@ import io.restassured.RestAssured;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
-import java.sql.Connection;
-import java.sql.ResultSet;
 import java.sql.SQLException;
-import java.sql.Statement;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
 import java.util.Properties;
 
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
 
-import Exposure.RestAssured.setConsentTest;
 import dbConnection.DataBaseConnection;
-
-import java.util.Random;
 public class Testbase 
 {
 	public static String tmdbServerIp=Testbase.getUpdatedProptiesFile().getProperty("DB_IP_TM");
